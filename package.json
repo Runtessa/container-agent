@@ -11,7 +11,7 @@
   "dependencies": {
     "dockerode": "5.0.1",
     "express": "4.22.1",
-    "ioredis": "5.10.1",
+    "ioredis": "6.0.0",
     "selfsigned": "5.5.0"
   },
   "devDependencies": {},
