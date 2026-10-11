@@ -1,7 +1,7 @@
 {
   "name": "idp-container-manager",
   "version": "1.1.0",
-  "description": "Secure remote container manager for IDP Editor",
+  "description": "Secure remote container manager for Runtessa Studio",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
@@ -18,7 +18,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlirezaDadrass/Idp.git"
+    "url": "git+https://github.com/Runtessa/container-agent.git"
   },
   "engines": {
     "node": ">=22.13.0 <23"

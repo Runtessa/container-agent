@@ -122,9 +122,9 @@ Run with Docker socket:
 docker run -d --name idp-container-manager \
   -p 4070:4070 \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  -v /absolute/host/path/to/IdpCore:/srv/idp \
+  -v /absolute/host/path/to/Runtessa:/srv/idp \
   -e CONTAINER_MANAGER_TOKEN=change-me \
-  -e CONTAINER_MANAGER_WORKSPACE_HOST_PATH=/absolute/host/path/to/IdpCore \
+  -e CONTAINER_MANAGER_WORKSPACE_HOST_PATH=/absolute/host/path/to/Runtessa \
   idp/container-manager:latest
 ```
 
@@ -134,9 +134,9 @@ Run with Podman socket:
 podman run -d --name idp-container-manager \
   -p 4070:4070 \
   -v /run/user/1000/podman/podman.sock:/var/run/docker.sock:Z,U \
-  -v /absolute/host/path/to/IdpCore:/srv/idp:Z,U \
+  -v /absolute/host/path/to/Runtessa:/srv/idp:Z,U \
   -e CONTAINER_MANAGER_ENGINE_LABEL=podman \
   -e CONTAINER_MANAGER_TOKEN=change-me \
-  -e CONTAINER_MANAGER_WORKSPACE_HOST_PATH=/absolute/host/path/to/IdpCore \
+  -e CONTAINER_MANAGER_WORKSPACE_HOST_PATH=/absolute/host/path/to/Runtessa \
   idp/container-manager:latest
 ```
